@@ -2,7 +2,7 @@
 - name: J Test
   hosts: web
 tasks:
-- name: ensure IIS web server is installed
+  - name: ensure IIS web server is installed
   win_feature:
       name: Web-Server
       state: present
