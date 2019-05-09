@@ -8,5 +8,5 @@
     when: ansible_os_family == "Windows"
   - name: Deploy Index file
     template:
-      src: iisstart.j2
+      src: https://github.com/jbuteraarw/gitty01/blob/master/iisstart%2Cj2
       dest: c:\inetpub\wwwroot\iisstart.htm
