@@ -8,5 +8,5 @@
     when: ansible_os_family == "Windows"
   - name: Deploy htm file
     win_get_url:
-      url: http://github.com/jbuteraarw/gitty01/blob/master/iisstart.j2
+      url: https://raw.githubusercontent.com/jbuteraarw/gitty01/master/Index.html
       dest: c:\inetpub\wwwroot\iisstart.htm
