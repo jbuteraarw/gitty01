@@ -1,6 +1,6 @@
 ---
 - name: J Test
-  hosts: all
+  hosts: web
 tasks:
 - name: ensure IIS web server is installed
   win_feature:
