@@ -7,6 +7,6 @@
       state: present
     when: ansible_os_family == "Windows"
   - name: Deploy htm file
-    get_url:
+    win_get_url:
       url: http://github.com/jbuteraarw/gitty01/blob/master/iisstart.j2
       dest: c:\inetpub\wwwroot\iisstart.htm
