@@ -1,5 +1,5 @@
 ---
-- hosts: 10.250.36.4
+- hosts:
   tasks:
   - name: ensure IIS web server is installed
     win_feature:
