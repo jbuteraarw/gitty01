@@ -1,6 +1,6 @@
 ---
-- hosts: localhost
-tasks:
+- hosts: web
+  tasks:
   - name: ensure IIS web server is installed
     win_feature:
       name: Web-Server
