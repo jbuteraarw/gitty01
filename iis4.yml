@@ -6,7 +6,7 @@
       name: Web-Server
       state: present
     when: ansible_os_family == "Windows"
-  - name: Deploy Index file
-    template:
-      src: https://github.com/jbuteraarw/gitty01/blob/master/iisstart%2Cj2
+  - name: Deploy htm file
+    get_url:
+      url: https://github.com/jbuteraarw/gitty01/blob/master/iisstart,j2
       dest: c:\inetpub\wwwroot\iisstart.htm
