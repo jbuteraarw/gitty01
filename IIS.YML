@@ -1,0 +1,9 @@
+---
+- hosts: web
+  tasks:
+  - name: ensure IIS web server is installed
+    win_feature:
+      name: Web-Server
+      state: present
+    when: ansible_os_family == "Windows"
+ 
